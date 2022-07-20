@@ -56,7 +56,7 @@ class Board
       @result = 'draw'
     end
 
-    [0..2].each do |i|
+    for i in 0..2
       if @board_state[i][0] == @board_state[i][1] && @board_state[i][1] == @board_state[i][2] && @board_state[i][0]
         end_game
       elsif @board_state[0][i] == @board_state[1][i] && @board_state[1][i] == @board_state[2][i] && @board_state[0][i]
